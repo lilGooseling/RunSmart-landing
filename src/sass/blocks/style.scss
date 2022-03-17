@@ -1,12 +1,34 @@
 @import "../base/variables";
-*{
+@import "../base/media";
+
+* {
   font-family: 'Museo Sans Cyrl', sans-serif;
+  box-sizing: border-box;
 }
-.container{
-  max-width: 950px;
+
+body {
+  margin: 0 !important;
+}
+
+.container {
+  width: 950px;
   margin: 0 auto;
+
+  @media (max-width: 1280px) {
+    width: 720px;
+  }
+
+  @media (max-width: 991px) {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+
 }
+
 @import "promo";
 @import "header";
 @import "buttons";
 @import "advantage";
+@import "consultation";
+@import "titles";
