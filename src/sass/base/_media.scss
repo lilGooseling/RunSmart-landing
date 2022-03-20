@@ -20,7 +20,19 @@
       font-size: 18px;
     }
   }
+  .consultation {
+    .container {
+      padding-left: 46px;
+    }
+    .title_left {
+      font-size: 30px;
+    }
+    .consultation__desc {
+      font-size: 18px;
+    }
+  }
 }
+
 @media (max-width: 767px) {
   .promo{
       .header__official{
@@ -32,6 +44,17 @@
   }
   .advantage__icons{
     flex-direction: column;
+  }
+  .consultation {
+    .container{
+      padding: 0 46px;
+    }
+    .title_left {
+      font-size: 23px;
+    }
+    .consultation__desc{
+      font-size: 15px;
+    }
   }
 }
 @media (max-width: 575px) {
@@ -91,6 +114,17 @@
     }
     .promo__link {
       margin-right: 46px;
+    }
+  }
+  .consultation{
+    .container{
+      padding: 0 26px;
+    }
+    .consultation__desc {
+      font-size: 13px;
+    }
+    .feed-form {
+      width: 100%;
     }
   }
 }
