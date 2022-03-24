@@ -2,8 +2,9 @@
   padding: 81px 0;
   &__inner {
     position: relative;
-    width: 750px;
+    width: 100%;
     margin: 0 auto;
+
   }
   .slick-prev {
     position: absolute;
@@ -30,4 +31,24 @@
       height: 50px;
     }
   }
+  .slick-dots {
+    display: flex;
+    margin: 0 auto;
+    width: fit-content;
+    li {
+      width: 10px;
+      button{
+        display: none;
+      }
+      &::marker{
+        display: block;
+      }
+    }
+  }
+  .slick-slide {
+    img {
+      width: 100%;
+    }
+  }
+
 }
