@@ -1,0 +1,41 @@
+.review {
+  padding-bottom: 49px;
+  &__header {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0D0D0D;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    margin-top: 60px;
+    display: flex;
+  }
+  &__round_descr{
+    margin-left: 60px;
+  }
+  .title-first {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #0D0D0D;
+  }
+  .title-second {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #646464;
+  }
+  .main-text {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0D0D0D;
+  }
+}
