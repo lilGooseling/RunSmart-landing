@@ -258,6 +258,29 @@
       }
     }
   }
+  .overlay {
+    .modal{
+      width: 220px;
+      padding: 18px 20px 20px 20px;
+      .feed-form {
+        width: 100%;
+      }
+      .modal__close {
+        right: -35px;
+      }
+      .modal__subtitle {
+        font-size: 15px;
+        line-height: 15px;
+      }
+      .modal__descr {
+        font-size: 12px;
+        line-height: 12px;
+      }
+      button {
+        font-size: 14px;
+      }
+    }
+  }
 }
 
 
