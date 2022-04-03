@@ -60,4 +60,10 @@ $(document).ready(function(){
     $('.button_mini').on('click', function () {
         $('.overlay, #order').fadeIn('slow');
     });
+    $('.button_mini').each(function (i) {
+        $(this).on('click', function () {
+            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+            $('.overlay, #order').fadeIn('slow');
+        });
+    });
 });
