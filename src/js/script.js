@@ -68,6 +68,29 @@ $(document).ready(function(){
     });
 
     $('#consultation-form').validate();
-    $('#consulting form').validate();
+    $('#consulting form').validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },
+            phone: "required",
+            email: {
+                required: true,
+                email: true
+            }
+        },
+        messages: {
+            name: {
+                required: "Пожалуйста, введите свое имя",
+                minlength: jQuery.validator.format("Введите {0} символа!")
+            },
+            phone: "Пожалуйста, введите свой номер телефона",
+            email: {
+                required: "Пожалуйста, введите свою почту",
+                email: "Неправильно введен адрес почты"
+            }
+        }
+    });
     $('#order form').validate();
 });
