@@ -10,6 +10,10 @@
   text-transform: uppercase;
   color: #FFFFFF;
   cursor: pointer;
+  &:hover {
+    box-shadow: 3px 3px 20px lightgreen;
+    border: none;
+  }
   &_main {
     margin-top: 67px;
     width: 300px;
