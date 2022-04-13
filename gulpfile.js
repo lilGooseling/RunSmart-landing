@@ -4,6 +4,7 @@ const sass        = require('gulp-sass')(require('sass'));
 const rename = require("gulp-rename");
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
+const imagemin = require('gulp-imagemin');
 
 // Static server
 gulp.task('server', function() {
